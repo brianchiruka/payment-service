@@ -12,7 +12,7 @@ A simple stateless service to handle payment processing using the Stitch API.
 
 1. Clone the repository:
    ```
-   git clone [repository-url]
+   git clone https://github.com/brianchiruka/payment-service
    cd payments-service-stitch
    ```
 
