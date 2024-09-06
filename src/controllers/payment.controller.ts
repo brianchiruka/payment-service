@@ -40,7 +40,7 @@ export const getPaymentStatus = async (
       paymentRequestId: req.params.paymentRequestId,
     }
     const result = await paymentService.getPaymentStatus(paymentInfo)
-    res.status(201).json(result)
+    res.status(200).json(result)
   } catch (error) {
     next(error)
   }
