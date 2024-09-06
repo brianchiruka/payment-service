@@ -13,7 +13,7 @@ A simple stateless service to handle payment processing using the Stitch API.
 1. Clone the repository:
    ```
    git clone https://github.com/brianchiruka/payment-service
-   cd payments-service-stitch
+   cd payment-service
    ```
 
 2. Install dependencies:
@@ -30,7 +30,7 @@ A simple stateless service to handle payment processing using the Stitch API.
    ```
    NODE_ENV=test
    PORT=4000
-   STITCH_API_URL=your_stitch_api_url
+   STITCH_API_URL=https://api.stitch.money/graphql
    STITCH_CLIENT_ID=your_stitch_client_id
    STITCH_CLIENT_SECRET=your_stitch_client_secret
    ```
@@ -104,7 +104,7 @@ yarn format
 
 2. Run the container:
    ```
-   docker run -p 4000:4000 -e PORT=4000 -e STITCH_API_URL=stitch_api_url -e STITCH_CLIENT_ID=your_id -e STITCH_CLIENT_SECRET=your_secret payments-service
+   docker run -p 4000:4000 -e PORT=4000 -e STITCH_API_URL=https://api.stitch.money/graphql -e STITCH_CLIENT_ID=your_id -e STITCH_CLIENT_SECRET=your_secret payments-service
    ```
 
 ## Docker Compose
@@ -125,14 +125,23 @@ This will start both the payments service and the Stitch API container.
 I welcome contributions to this project! Here are some guidelines to help you get started:
 
 Fork the Repository: Start by forking the repository and then clone your fork locally.
+
 Create a Branch: Create a new branch for each feature or bugfix you're working on.
+
 Code Style: Follow the existing code style. I use ESLint and Prettier to maintain consistency.
+
 Commit Messages: Write clear, concise commit messages. Start with a verb in the present tense, e.g., "Add feature" or "Fix bug".
+
 Testing: Add or update tests for any new or modified functionality.
+
 Documentation: Update the README.md or other documentation if your changes require it.
+
 Pull Requests: Submit a pull request with a clear description of your changes and why they're necessary.
-Code Review: Be open to feedback and be responsive during the code review process.
+
+Code Reviews: Be open to feedback and be responsive during the code review process.
+
 Keep it Simple: Try to submit smaller, focused pull requests rather than large, sweeping changes.
+
 Be Respectful: Remember that this is an open-source project. Be respectful and constructive in your communication with other contributors.
 
 Before contributing, please read through the existing issues and pull requests to ensure you're not duplicating effort.
