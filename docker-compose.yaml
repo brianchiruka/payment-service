@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  payments-service:
+    build: .
+    ports:
+      - '4000:4000'
+    environment:
+      - PORT=4000
+      - STITCH_API_URL=${STITCH_API_URL}
+      - STITCH_CLIENT_ID=${STITCH_CLIENT_ID}
+      - STITCH_CLIENT_SECRET=${STITCH_CLIENT_SECRET}
+    depends_on:
+      - stitch-api
+  stitch-api:
+    image: stitchmoney/api:latest

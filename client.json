@@ -1,0 +1,41 @@
+{
+  "client": {
+    "id": "test-909013a6-f6ce-4633-8c28-68cdbf30bb1b",
+    "name": "N/A Test",
+    "environment": "test",
+    "url": "https://localhost:8080/",
+    "allowedScopes": [
+      "openid",
+      "openid",
+      "accounts",
+      "balances",
+      "transactions",
+      "accountholders",
+      "client_imageupload",
+      "client_paymentrequest",
+      "paymentinitiationrequest",
+      "client_paymentauthorizationrequest",
+      "client_refund",
+      "client_disbursement"
+    ],
+    "redirectUrls": [
+      "https://localhost:8000/return",
+      "http://localhost:3000/return",
+      "https://localhost:8080/return",
+      "http://localhost:8080/return"
+    ],
+    "countryCodes": ["ZA"],
+    "absoluteRefreshTokenLifetime": 0,
+    "accessTokenLifetime": 3600,
+    "allowedGrantTypes": ["authorization_code", "client_credentials"],
+    "authorizationCodeLifetime": 300,
+    "identityTokenLifetime": 300,
+    "refreshTokenUsage": 1,
+    "slidingRefreshTokenLifetime": 1296000
+  },
+  "secret": {
+    "id": "d1d20ba0-0458-4c4d-877c-6e27a58c035d",
+    "value": "x9yrKNopEySbLfTzawQV4NrJWIl6VDdbSkLP95exXlNFzlLQhE5qzMn0Y0Wyj02iQlmJTcCbH9hujXmP6WdA+g==",
+    "expiration": "2024-09-04T11:06:03.540+00:00"
+  }
+}
